@@ -1,0 +1,707 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: lightgrey;
+}
+
+h1{
+    font-family: 'Mali', cursive;
+}
+
+h2{
+    font-family: 'Mali', cursive;
+}
+
+ul{
+    list-style: none;
+}
+
+/* HEADER */
+header{
+    background-color: #2A2170;
+    position: sticky;
+    top: 0px;
+}
+
+.header__nav {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.header__logo{
+    width: 60px;
+    height: 60px;
+}
+
+.header__lista{
+    display: flex;
+    list-style: none;
+    padding: 0 16px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.header__item a{
+    color: white;
+    text-decoration: none;
+}
+
+/* MAIN-INDEX */
+.main__portada{
+    display: grid;
+    width: auto;
+    height: 75vh;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-image: url(../recursos/portada.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 32px;
+}
+
+.main__titulo{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 16px;
+}
+
+.main__texto{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    height: 40vh;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.main__galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main__bodegas--img{
+    width: 200px;
+    height: 200px;
+}
+
+/* PAGINA PRODUCTOS */
+.productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 16px;
+}
+
+.productos__img{
+    width: 100px;
+    height: 150px;
+}
+
+/* COLOSSO */
+.productos__titulo--colosso{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 8vh;
+    width: 20vw;
+    padding: 16px;
+    margin: 16px;
+    border: 1px solid #82517C;
+    border-radius: 25px;
+    background-color: #82517C;
+    color: white;
+    font-size: 35px;
+}
+
+.productos__subtitulo--colosso{
+    grid-column: 4/5;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: 10px;
+}
+
+.productos__card1{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.productos__card2{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.productos__card3{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.productos__card4{
+    grid-column: 4/5;
+    grid-row: 2/3;
+    border-bottom: 10px solid #a0859d;
+}
+
+/* SOTTANO */
+.productos__titulo--sottano{
+    grid-column: 1/3;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 8vh;
+    width: 20vw;
+    padding: 16px;
+    margin: 16px;
+    border: 1px solid #82517C;
+    border-radius: 25px;
+    background-color: #82517C;
+    color: white;
+    font-size: 35px;
+}
+
+.productos__subtitulo--sottano{
+    grid-column: 4/5;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: 10px;
+}
+
+.productos__card5{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.productos__card6{
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+.productos__card7{
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+.productos__card8{
+    grid-column: 4/5;
+    grid-row: 4/5;
+    border-bottom: 10px solid #a0859d;
+}
+
+.productos__card9{
+    grid-column: 5/6;
+    grid-row: 4/5;
+    border-bottom: 10px solid #a0859d;
+}
+
+/* FIN DEL MUNDO */
+.productos__titulo--fin{
+    grid-column: 1/3;
+    grid-row: 5/6;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 8vh;
+    width: 20vw;
+    padding: 16px;
+    margin: 16px;
+    border: 1px solid #82517C;
+    border-radius: 25px;
+    background-color: #82517C;
+    color: white;
+    font-size: 35px;
+}
+
+.productos__card10{
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+
+.productos__card11{
+    grid-column: 2/3;
+    grid-row: 6/7;
+}
+
+/* PAGINA BODEGAS */
+.bodegas{
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto;
+}
+
+.bodegas__portada{
+    width: 900px;
+    height: 450px;
+}
+
+.bodegas__titulo{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+}
+
+.bodegas__ravera{
+    grid-column: 1/4;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+}
+
+.bodegas__alandes{
+    grid-column: 1/4;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+}
+
+.bodegas__fin{
+    grid-column: 1/4;
+    grid-row: 4/5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+}
+
+/* PAGINA QUIENES SOMOS */
+.informacion{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 3fr;
+}
+
+.informacion__titulo{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.informacion__portada{
+    grid-column: 1/4;
+    grid-row: 2/3;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 16px;
+}
+
+.informacion__img{
+    grid-column: 1/4;
+    grid-row: 3/4;
+    background-image: url("../recursos/copas.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    margin: 16px;
+}
+
+/* PAGINA CONTACTO */
+.contacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.contacto__titulo{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+}
+
+.contacto__formulario{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+}
+
+.contacto__saludo{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+    margin: 16px;
+}
+
+.contacto__nombre{
+    padding: 16px 25px;
+    border: solid 1px black;
+    margin: 10px;
+}
+
+.contacto__email{
+    padding: 16px 25px;
+    border: solid 1px black;
+    margin: 10px;
+}
+
+.contacto__comentario{
+    padding: 16px 25px;
+    border: solid 1px black;
+    margin: 10px;
+}
+
+/* FOOTER */
+footer{
+    display: grid;
+    grid-template-areas: "indice mapa redes"
+                        "indice mapa derechos";
+    padding: 20px;
+}
+
+.footer__indice{
+    grid-area: indice;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__mapa{
+    grid-area: mapa;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__redes{
+    grid-area: redes;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.footer__derechos{
+    grid-area: derechos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__iconos{
+    width: 55px;
+    height: 55px;
+    margin: 10px;
+}
+
+.footer__indice ul li{
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* MEDIA QUERIE CELULAR */
+@media (min-width: 320px) and (max-width:575px) {
+    /* HEADER */
+    header{
+        height: auto;
+        width: auto;
+    }
+
+    .header__lista{
+        flex-direction: column;
+    }
+    
+    .header__nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__logo{
+        height: auto;
+    }
+
+    /* MAIN-INDEX */
+    .main__portada{
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        font-size: auto;
+    }
+
+    .main__titulo{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        justify-content:center;
+    }
+
+    .main__texto{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        height: auto;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .main__galeria{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .main__bodegas--img{
+        width: 200px;
+        height: 200px;
+    }
+
+    /* PAGINA PRODUCTOS */
+    .productos{
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 10px;
+    }
+
+    .productos__img{
+        height: auto;
+    }
+
+    /* COLOSSO */
+    .productos__titulo--colosso{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 45vw;
+        font-size: 20px;
+    }
+
+    .productos__subtitulo--colosso{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
+    .productos__card1{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin: 10px;
+    }
+
+    .productos__card2{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin: 10px;
+    }
+
+    .productos__card3{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        margin: 10px;
+    }
+
+    .productos__card4{
+        grid-column: 1/2;
+        grid-row: 6/7;
+        margin: 10px;
+    }
+
+    /* SOTTANO */
+    .productos__titulo--sottano{
+        grid-column: 1/2;
+        grid-row: 7/8;
+        width: 45vw;
+        font-size: 20px;
+    }
+
+    .productos__subtitulo--sottano{
+        grid-column: 1/2;
+        grid-row: 11/12;
+    }
+
+    .productos__card5{
+        grid-column: 1/2;
+        grid-row: 8/9;
+        margin: 10px;
+    }
+
+    .productos__card6{
+        grid-column: 1/2;
+        grid-row: 9/10;
+        margin: 10px;
+    }
+
+    .productos__card7{
+        grid-column: 1/2;
+        grid-row: 10/11;
+        margin: 10px;
+    }
+
+    .productos__card8{
+        grid-column: 1/2;
+        grid-row: 12/13;
+        margin: 10px;
+    }
+
+    .productos__card9{
+        grid-column: 1/2;
+        grid-row: 13/14;
+        margin: 10px;
+    }
+
+    /* FIN DEL MUNDO */
+    .productos__titulo--fin{
+        grid-column: 1/2;
+        grid-row: 14/15;
+        width: 45vw;
+        font-size: 20px;
+    }
+
+    .productos__card10{
+        grid-column: 1/2;
+        grid-row: 15/16;
+        margin: 10px;
+    }
+
+    .productos__card11{
+        grid-column: 1/2;
+        grid-row: 16/17;
+        margin: 10px;
+    }
+
+    /* PAGINA BODEGAS */
+    .bodegas{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 2fr 2fr;
+    }
+
+    .bodegas__portada{
+        height: 250px;
+        width: auto;
+    }
+
+    .bodegas__titulo{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .bodegas__ravera{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+        
+    .bodegas__alandes{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    .bodegas__fin{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .informacion{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .informacion__titulo{
+        grid-column: 1/2;
+        grid-row: 1/2;
+}
+
+    .informacion__portada{
+        grid-column: 1/2;
+        grid-row: 2/3;
+}
+
+    .informacion__img{
+        grid-column: 1/2;
+        grid-row: 3/4;
+}
+
+/* PAGINA CONTACTO */
+.contacto{
+    grid-template-rows: auto;
+}
+
+.contacto__titulo{
+    font-size: 25px;
+}
+
+    /* FOOTER */
+    footer{
+        grid-template-areas: "indice" 
+                            "mapa"
+                            "redes"
+                            "derechos";
+        padding: 10px;
+    }
+
+    .footer__mapa{
+        display: none;
+    }
+}
+
+/* MEDIA QUERIE TABLET */
+@media (min-width: 576px) and (max-width:992px) {
+    /* MAIN-INDEX */
+    .main__portada{
+        height: auto;
+        width: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        font-size: auto;
+    }
+    .main__titulo{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        justify-content: center;
+    }
+
+    .main__texto{
+        grid-column: 1/4;
+        grid-row: 2/3;
+        height: auto;
+        justify-content: center;
+    }
+
+    /* FOOTER */
+    footer{
+        grid-template-areas: "indice" 
+                            "mapa"
+                            "redes"
+                            "derechos";
+        padding: 10px;
+    }
+}
