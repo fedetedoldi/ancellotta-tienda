@@ -23,7 +23,8 @@ ul{
 
 /* HEADER */
 header{
-    background-color: #2A2170;
+/*     background-color: #2A2170; */
+    background-image: linear-gradient(#2A2170 white);
     position: sticky;
     top: 0px;
 }
