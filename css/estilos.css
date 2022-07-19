@@ -24,7 +24,7 @@ ul{
 /* HEADER */
 header{
 /*     background-color: #2A2170; */
-    background-image: linear-gradient(#2A2170 white);
+    background-image: linear-gradient(white #2A2170);
     position: sticky;
     top: 0px;
 }
