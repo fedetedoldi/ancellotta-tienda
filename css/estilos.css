@@ -23,8 +23,7 @@ ul{
 
 /* HEADER */
 header{
-/*     background-color: #2A2170; */
-    background-image: linear-gradient(white #2A2170);
+    background-color: #2A2170;
     position: sticky;
     top: 0px;
 }
@@ -50,6 +49,11 @@ header{
     justify-content: space-around;
     align-items: center;
     flex-grow: 1;
+}
+
+.header__item:hover{
+    transform: scale(1.2,1.2);
+    transition: all 1s;
 }
 
 .header__item a{
@@ -103,6 +107,11 @@ header{
 .main__bodegas--img{
     width: 200px;
     height: 200px;
+}
+
+.main__bodegas--img:hover{
+    transform: scale(1.1, 1.1);
+    transition: all 2s;
 }
 
 /* PAGINA PRODUCTOS */
@@ -424,6 +433,11 @@ footer{
     width: 55px;
     height: 55px;
     margin: 10px;
+}
+
+.footer__iconos:hover{
+    transform: scale(2,2);
+    transition: all 3s;
 }
 
 .footer__indice ul li{
