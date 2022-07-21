@@ -22,33 +22,13 @@ ul{
 }
 
 /* HEADER */
-header{
+.header{
     background-color: #2a2170;
-    position: sticky;
-    top: 0px;
-}
-
-.header__nav {
-    display: flex;
-    position: sticky;
-    top: 0px;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .header__logo{
-    width: 60px;
-    height: 60px;
-}
-
-.header__lista{
-    display: flex;
-    list-style: none;
-    padding: 0 16px;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    flex-grow: 1;
+    width: 50px;
+    height: 50px;
 }
 
 .header__item:hover{
@@ -56,45 +36,24 @@ header{
     transition: all 1s;
 }
 
-.header__item a{
+.nav-link{
     color: white;
-    text-decoration: none;
+}
+
+.active{
+    color: aqua;
 }
 
 /* MAIN-INDEX */
-.main__portada{
-    display: grid;
-    width: auto;
-    height: 75vh;
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    background-image: url(../recursos/portada.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    font-size: 32px;
+.carousel__altura{
+    height: 600px;
 }
 
-.main__titulo{
-    grid-column: 2/3;
-    grid-row: 1/2;
+.texto{
     display: flex;
-    flex-grow: 1;
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content:flex-start;
-    align-items: center;
-    padding: 16px;
-}
-
-.main__texto{
-    grid-column: 2/3;
-    grid-row: 2/3;
-    display: flex;
-    height: 40vh;
-    align-items: flex-start;
     justify-content: center;
+    margin: 5px;
 }
 
 .main__galeria{
@@ -346,52 +305,8 @@ header{
 }
 
 /* PAGINA CONTACTO */
-.contacto{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
-.contacto__titulo{
-    grid-column: 1/2;
-    grid-row: 1/2;
-    display: flex;
-    justify-content: center;
-}
-
-.contacto__formulario{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.btn{
     margin: 16px;
-}
-
-.contacto__saludo{
-    grid-column: 1/2;
-    grid-row: 3/4;
-    display: flex;
-    justify-content: center;
-    margin: 16px;
-}
-
-.contacto__nombre{
-    padding: 16px 25px;
-    border: solid 1px black;
-    margin: 10px;
-}
-
-.contacto__email{
-    padding: 16px 25px;
-    border: solid 1px black;
-    margin: 10px;
-}
-
-.contacto__comentario{
-    padding: 16px 25px;
-    border: solid 1px black;
-    margin: 10px;
 }
 
 /* FOOTER */

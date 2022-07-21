@@ -5,31 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../recursos/favicon.ico" type="image/x-icon">
+    <!-- Letras de Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mali&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/estilos.css"> 
     <title>Quienes Somos - Ancelotta</title>
 </head>
 <body>
     <header>        
-        <nav class="header__nav">
-            <a href="../index.html"><img class="header__logo" src="../recursos/logo.jpg" alt="logo ancellotta"></a>
-            <ul class="header__lista">
-                <li class="header__item"><a href="../index.html">Inicio</a></li>
-                <li class="header__item"><a href="productos.html">Productos</a></li>
-                <li class="header__item"><a href="bodegas.html">Bodegas</a></li>
-                <li class="header__item"><a href="#">Quienes Somos</a></li>
-                <li class="header__item"><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg header">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">
+                <img class="header__logo" src="../recursos/logo.jpg" alt="Logo Ancellotta">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../paginas/productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../paginas/bodegas.html">Bodegas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active href="#">Quienes Somos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
-    <main class="informacion">
+    <main>
         <h1 class="informacion__titulo">Quienes somos</h1>
         <p class="informacion__portada">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ipsa aut ea quo sit vel natus ducimus delectus voluptates soluta, omnis eligendi itaque unde eaque nulla, similique praesentium aspernatur nesciunt.
         Excepturi hic, voluptatibus iusto, perspiciatis minus rerum fuga recusandae illo in deserunt esse, enim consequatur veniam temporibus quod ipsa autem mollitia doloremque neque ex reprehenderit optio unde? Optio, facilis deleniti?
         Obcaecati voluptas beatae nam suscipit eveniet accusantium cumque enim est ea, molestias hic perferendis non voluptatem, quis sed. Commodi eos porro ratione dolorem voluptatem error facere, nulla magnam sequi esse.</p>
-        <div class="informacion__img"></div>
+        <section class="container-fluid">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../recursos/personas.jpg" class="carousel__altura img-fluid d-block w-100" alt="Personas">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../recursos/copas.jpg" class="carousel__altura img-fluid d-block w-100" alt="Copas">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../recursos/bodega-grande-seis.jpg" class="carousel__altura img-fluid d-block w-100" alt="Tercera portada Sottano">
+                  </div>
+                </div>
+              </div>
+        </section>
     </main>
     <footer>
         <div class="footer__indice">
@@ -51,5 +88,7 @@
         </div>
         <span class="footer__derechos">2022 © Todos los derechos reservados</span>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
