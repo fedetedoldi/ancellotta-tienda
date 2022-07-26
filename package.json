@@ -1,0 +1,23 @@
+{
+  "name": "proyecto-final-ancellotta",
+  "version": "1.0.0",
+  "description": "<h1>Ancellotta Tienda - Proyecto CoderHouse</h1>\r <p>Este sitio es para el proyecto final de la carrera de Desarrollo Web, pensado en una tienda de vinos online llamada Ancellotta</p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fedetedoldi/ancellotta-tienda.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fedetedoldi/ancellotta-tienda/issues"
+  },
+  "homepage": "https://github.com/fedetedoldi/ancellotta-tienda#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

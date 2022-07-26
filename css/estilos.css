@@ -31,7 +31,7 @@ ul{
     height: 50px;
 }
 
-.header__item:hover{
+.nav-link:hover{
     transform: scale(1.2,1.2);
     transition: all 1s;
 }
@@ -75,145 +75,17 @@ ul{
 
 /* PAGINA PRODUCTOS */
 .productos{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    padding: 16px;
+    margin-top: 16px;
 }
 
-.productos__img{
-    width: 100px;
-    height: 150px;
-}
-
-/* COLOSSO */
-.productos__titulo--colosso{
-    grid-column: 1/3;
-    grid-row: 1/2;
+.accordion-body{
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 8vh;
-    width: 20vw;
-    padding: 16px;
-    margin: 16px;
-    border: 1px solid #82517C;
-    border-radius: 25px;
-    background-color: #82517C;
-    color: white;
-    font-size: 35px;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
-.productos__subtitulo--colosso{
-    grid-column: 4/5;
-    grid-row: 1/2;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    margin: 10px;
-}
-
-.productos__card1{
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-
-.productos__card2{
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-
-.productos__card3{
-    grid-column: 3/4;
-    grid-row: 2/3;
-}
-
-.productos__card4{
-    grid-column: 4/5;
-    grid-row: 2/3;
-    border-bottom: 10px solid #a0859d;
-}
-
-/* SOTTANO */
-.productos__titulo--sottano{
-    grid-column: 1/3;
-    grid-row: 3/4;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 8vh;
-    width: 20vw;
-    padding: 16px;
-    margin: 16px;
-    border: 1px solid #82517C;
-    border-radius: 25px;
-    background-color: #82517C;
-    color: white;
-    font-size: 35px;
-}
-
-.productos__subtitulo--sottano{
-    grid-column: 4/5;
-    grid-row: 3/4;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    margin: 10px;
-}
-
-.productos__card5{
-    grid-column: 1/2;
-    grid-row: 4/5;
-}
-
-.productos__card6{
-    grid-column: 2/3;
-    grid-row: 4/5;
-}
-
-.productos__card7{
-    grid-column: 3/4;
-    grid-row: 4/5;
-}
-
-.productos__card8{
-    grid-column: 4/5;
-    grid-row: 4/5;
-    border-bottom: 10px solid #a0859d;
-}
-
-.productos__card9{
-    grid-column: 5/6;
-    grid-row: 4/5;
-    border-bottom: 10px solid #a0859d;
-}
-
-/* FIN DEL MUNDO */
-.productos__titulo--fin{
-    grid-column: 1/3;
-    grid-row: 5/6;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 8vh;
-    width: 20vw;
-    padding: 16px;
-    margin: 16px;
-    border: 1px solid #82517C;
-    border-radius: 25px;
-    background-color: #82517C;
-    color: white;
-    font-size: 35px;
-}
-
-.productos__card10{
-    grid-column: 1/2;
-    grid-row: 6/7;
-}
-
-.productos__card11{
-    grid-column: 2/3;
-    grid-row: 6/7;
+.accordion-button{
+    font-size: 30px;
 }
 
 /* PAGINA BODEGAS */
@@ -385,6 +257,12 @@ a{
         height: auto;
     }
 
+    .nav-item{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     /* MAIN-INDEX */
     .main__portada{
         height: auto;
@@ -415,118 +293,6 @@ a{
     .main__bodegas--img{
         width: 200px;
         height: 200px;
-    }
-
-    /* PAGINA PRODUCTOS */
-    .productos{
-        height: auto;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        padding: 10px;
-    }
-
-    .productos__img{
-        height: auto;
-    }
-
-    /* COLOSSO */
-    .productos__titulo--colosso{
-        grid-column: 1/2;
-        grid-row: 1/2;
-        width: 45vw;
-        font-size: 20px;
-    }
-
-    .productos__subtitulo--colosso{
-        grid-column: 1/2;
-        grid-row: 5/6;
-    }
-
-    .productos__card1{
-        grid-column: 1/2;
-        grid-row: 2/3;
-        margin: 10px;
-    }
-
-    .productos__card2{
-        grid-column: 1/2;
-        grid-row: 3/4;
-        margin: 10px;
-    }
-
-    .productos__card3{
-        grid-column: 1/2;
-        grid-row: 4/5;
-        margin: 10px;
-    }
-
-    .productos__card4{
-        grid-column: 1/2;
-        grid-row: 6/7;
-        margin: 10px;
-    }
-
-    /* SOTTANO */
-    .productos__titulo--sottano{
-        grid-column: 1/2;
-        grid-row: 7/8;
-        width: 45vw;
-        font-size: 20px;
-    }
-
-    .productos__subtitulo--sottano{
-        grid-column: 1/2;
-        grid-row: 11/12;
-    }
-
-    .productos__card5{
-        grid-column: 1/2;
-        grid-row: 8/9;
-        margin: 10px;
-    }
-
-    .productos__card6{
-        grid-column: 1/2;
-        grid-row: 9/10;
-        margin: 10px;
-    }
-
-    .productos__card7{
-        grid-column: 1/2;
-        grid-row: 10/11;
-        margin: 10px;
-    }
-
-    .productos__card8{
-        grid-column: 1/2;
-        grid-row: 12/13;
-        margin: 10px;
-    }
-
-    .productos__card9{
-        grid-column: 1/2;
-        grid-row: 13/14;
-        margin: 10px;
-    }
-
-    /* FIN DEL MUNDO */
-    .productos__titulo--fin{
-        grid-column: 1/2;
-        grid-row: 14/15;
-        width: 45vw;
-        font-size: 20px;
-    }
-
-    .productos__card10{
-        grid-column: 1/2;
-        grid-row: 15/16;
-        margin: 10px;
-    }
-
-    .productos__card11{
-        grid-column: 1/2;
-        grid-row: 16/17;
-        margin: 10px;
     }
 
     /* PAGINA BODEGAS */
@@ -605,6 +371,12 @@ a{
 
 /* MEDIA QUERIE TABLET */
 @media (min-width: 576px) and (max-width:992px) {
+
+    .nav-item{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     /* MAIN-INDEX */
     .main__portada{
         height: auto;

@@ -48,79 +48,199 @@
           </nav>
     </header>
     <main>
-        <h1 class="main__titulo">Productos</h1>
-        <section class="productos">
-            <h2 class="productos__titulo--colosso">Colosso Wines</h2>
-            <h3 class="productos__subtitulo--colosso">Alta Gama</h3>
-            <article class="productos__card1">
-                <img class="productos__img" src="../recursos/vino-uno.jpg" alt="Reto Malbec">
-                <h3>Reto</h3>
-                <p>Malbec</p>
-            </article>
-            <article class="productos__card2">
-                <img class="productos__img" src="../recursos/vino-dos.jpg" alt="Indomable Blend de Malbec">
-                <h3>Indomable</h3>
-                <p>Blend de Malbec</p>
-            </article>
-            <article class="productos__card3">
-                <img class="productos__img" src="../recursos/vino-tres.jpg" alt="Indomable Blanc">
-                <h3>Indomable</h3>
-                <p>Blanc</p>
-            </article>
-            <article class="productos__card4">
-                <img class="productos__img" src="../recursos/vino-cuatro.jpg" alt="Arrogante Malbec">
-                <h3>Arrogante</h3>
-                <p>Malbec</p>
-            </article>
-            <h2 class="productos__titulo--sottano">Sottano</h2>
-            <h3 class="productos__subtitulo--sottano">Alta Gama</h3>
-            <article class="productos__card5">
-                <img class="productos__img" src="../recursos/vino-cinco.jpg" alt="Class Malbec">
-                <h3>Class</h3>
-                <p>Malbec</p>
-            </article>
-            <article class="productos__card6">
-                <img class="productos__img" src="../recursos/vino-seis.jpg" alt="Class Cabernet Souvignon">
-                <h3>Class</h3>
-                <p>Cabernet Souvignon</p>
-            </article>
-            <article class="productos__card7">
-                <img class="productos__img" src="../recursos/vino-siete.jpg" alt="Class Blend">
-                <h3>Class</h3>
-                <p>Blend</p>
-            </article>
-            <article class="productos__card8">
-                <img class="productos__img" src="../recursos/vino-ocho.jpg" alt="Reserva Cabernet Souvignon">
-                <h3>Reserva</h3>
-                <p>Cabernet Souvignon</p>
-            </article>
-            <article class="productos__card9">
-                <img class="productos__img" src="../recursos/vino-nueve.jpg" alt="Reserva Blend">
-                <h3>Reserva</h3>
-                <p>Blend</p>
-            </article>
-            <h2 class="productos__titulo--fin">Fin del Mundo</h2>
-            <article class="productos__card10">
-                <img class="productos__img" src="../recursos/vino-dos.jpg" alt="Postales Malbec">
-                <h3>Postales</h3>
-                <p>Malbec</p>
-            </article>
-            <article class="productos__card11">
-                <img class="productos__img" src="../recursos/vino-cuatro.jpg" alt="Postales Cabernet Souvignon">
-                <h3>Postales</h3>
-                <p>Cabernet Souvignon</p>
-            </article>
-        </section>
-        <section class="container-fluid">
-            <div class="list-group">
-                <label for="name">Elige tu preferido!</label>
-                <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-                  Colosso Wines
-                </a>
-                <a href="#" class="list-group-item list-group-item-action">Sottano</a>
-                <a href="#" class="list-group-item list-group-item-action">Fin del Mundo</a>
+      <section class="container-fluid productos">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Colosso Wines
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <div class="card m-3" style="max-width: 300px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="../recursos/vino-uno.jpg" class="img-fluid rounded-start" alt="Primer Vino">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h3 class="card-title">Reto</h3>
+                        <p class="card-text">Malbec</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card m-3" style="max-width: 300px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="../recursos/vino-dos.jpg" class="img-fluid rounded-start" alt="Segundo Vino">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h3 class="card-title">Indomable</h3>
+                        <p class="card-text">Blend de Malbec</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card m-3" style="max-width: 300px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="../recursos/vino-tres.jpg" class="img-fluid rounded-start" alt="Tercer Vino">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h3 class="card-title">Indomable</h3>
+                        <p class="card-text">Blanc</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card m-3" style="max-width: 300px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="../recursos/vino-cuatro.jpg" class="img-fluid rounded-start" alt="Cuarto Vino">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h3 class="card-title">Arrogante</h3>
+                        <p class="card-text">Malbec</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-        </section>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Sottano
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <div class="card m-3" style="max-width: 300px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="../recursos/vino-cinco.jpg" class="img-fluid rounded-start" alt="Quinto Vino">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h3 class="card-title">Class</h3>
+                        <p class="card-text">Malbec</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card m-3" style="max-width: 300px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="../recursos/vino-seis.jpg" class="img-fluid rounded-start" alt="Sexto Vino">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h3 class="card-title">Class</h3>
+                        <p class="card-text">Cabernet Souvignon</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card m-3" style="max-width: 300px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="../recursos/vino-siete.jpg" class="img-fluid rounded-start" alt="Septimo Vino">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h3 class="card-title">Reserva</h3>
+                        <p class="card-text">Cabernet Souvignon</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card m-3" style="max-width: 300px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="../recursos/vino-ocho.jpg" class="img-fluid rounded-start" alt="Octavo Vino">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h3 class="card-title">Reserva</h3>
+                        <p class="card-text">Blend</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Corbeau Wines
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <div class="card m-3" style="max-width: 300px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="../recursos/vino-nueve.jpg" class="img-fluid rounded-start" alt="Noveno Vino">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h3 class="card-title">Pixeles</h3>
+                        <p class="card-text">Ancellotta</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card m-3" style="max-width: 300px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="../recursos/vino-cuatro.jpg" class="img-fluid rounded-start" alt="Decimo Vino">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h3 class="card-title">Little Mad Bird</h3>
+                        <p class="card-text">Malbec</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card m-3" style="max-width: 300px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="../recursos/vino-ocho.jpg" class="img-fluid rounded-start" alt="Decimoprimer Vino">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h3 class="card-title">Mad Bird</h3>
+                        <p class="card-text">Malbec/Ancellotta</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card m-3" style="max-width: 300px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="../recursos/vino-tres.jpg" class="img-fluid rounded-start" alt="Decimosegundo Vino">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h3 class="card-title">Mad Bird Reposado</h3>
+                        <p class="card-text">Malbec</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
         <div class="footer__indice">
