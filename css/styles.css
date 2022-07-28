@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/* LETRAS */
+/* COLORES */
+/* TAMAÑOS */
+footer {
+  display: grid;
+  grid-template-areas: "indice mapa redes" "indice mapa derechos";
+  padding: 20px; }
+  footer .footer__indice {
+    grid-area: indice;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  footer .footer__mapa {
+    grid-area: mapa;
+    display: flex;
+    justify-content: center; }
+  footer .footer__redes {
+    grid-area: redes;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; }
+  footer .footer__derechos {
+    grid-area: derechos;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  footer .footer__iconos {
+    height: 55px;
+    margin: 10px; }
+    footer .footer__iconos:hover {
+      transform: scale(2, 2);
+      transition: all 3s; }
+  footer .footer__indice ul li {
+    font-size: 16px;
+    padding-bottom: 10px; }
+
+.header {
+  background-color: #2a2170; }
+  .header__logo {
+    height: 50px; }
+  .header .nav-link {
+    color: white; }
+    .header .nav-link:hover {
+      transform: scale(1.2, 1.2);
+      transition: all 1s; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgba(211, 211, 211, 0.751); }
+
+h1 {
+  font-family: "Mali", cursive;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5px; }
+
+h2 {
+  font-family: "Mali", cursive;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5px; }
+
+p {
+  margin: 5px; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+button {
+  margin: 16px; }
+
+/* MAIN-INDEX */
+.portada .carousel__altura {
+  height: 600px; }
+
+.portada .main__bodegas .main__galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center; }
+  .portada .main__bodegas .main__galeria--img {
+    width: 200px;
+    height: 200px; }
+    .portada .main__bodegas .main__galeria--img:hover {
+      transform: scale(1.1, 1.1);
+      transition: all 2s; }
+
+/* PAGINA PRODUCTOS */
+.productos {
+  margin-top: 16px; }
+  .productos .accordion-body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; }
+  .productos .accordion-button {
+    font-size: 30px; }
+
+/* MEDIA QUERIE CELULAR */
+@media (min-width: 320px) and (max-width: 575px) {
+  /* HEADER */
+  .nav-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  /* MAIN-INDEX */
+  .portada .main__bodegas .main__galeria--img {
+    padding: 10px; }
+  /* PAGINA CONTACTO */
+  .contacto {
+    grid-template-rows: auto; }
+  /* FOOTER */
+  footer {
+    grid-template-areas: "indice"  "mapa" "redes" "derechos";
+    padding: 10px; }
+    footer .footer__mapa {
+      display: none; } }
+
+/* MEDIA QUERIE TABLET */
+@media (min-width: 576px) and (max-width: 992px) {
+  /* HEADER */
+  .nav-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  /* MAIN-INDEX */
+  .portada .main__bodegas .main__galeria--img {
+    padding: 10px; }
+  /* FOOTER */
+  footer .footer__mapa {
+    display: none; } }

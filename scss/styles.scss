@@ -1,0 +1,85 @@
+@import "variables";
+@import "footer";
+@import "nav";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $font-principal;
+    background-color: $color-principal;
+}
+
+h1{
+    font-family: $font-titulos;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px;
+}
+
+h2{
+    font-family: $font-titulos;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px;
+}
+
+p{
+    margin: 5px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    margin: 16px;
+}
+
+/* MAIN-INDEX */
+.portada{
+    .carousel__altura{
+        height: $carousel;
+    }
+    .main__bodegas{
+        .main__galeria{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            &--img{
+                width: $bodegas-portada;
+                height: $bodegas-portada;
+                &:hover{
+                    transform: scale(1.1, 1.1);
+                    transition: all 2s;
+                }
+            }
+        }
+    }
+}
+
+/* PAGINA PRODUCTOS */
+.productos{
+    margin-top: 16px;
+    .accordion-body{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .accordion-button{
+        font-size: $fuente-productos;
+    }
+    
+}
+
+@import "mediaqueries";

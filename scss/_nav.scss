@@ -1,0 +1,13 @@
+.header{
+    background-color: $color-secundario;
+    &__logo{
+        height: $logo;
+    }
+    .nav-link{
+        color: $links;
+        &:hover{
+            transform: scale(1.2,1.2);
+            transition: all 1s;
+        }
+    }
+}

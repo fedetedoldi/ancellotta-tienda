@@ -1,0 +1,69 @@
+/* MEDIA QUERIE CELULAR */
+@media (min-width: 320px) and (max-width:575px) {
+    /* HEADER */
+    .nav-item{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+/* MAIN-INDEX */
+.portada{
+    .main__bodegas{
+        .main__galeria{
+            &--img{
+                padding: 10px;
+            }
+        }
+    }
+}
+
+/* PAGINA CONTACTO */
+.contacto{
+    grid-template-rows: auto;
+}
+
+/* FOOTER */
+footer{
+    grid-template-areas: "indice" 
+                        "mapa"
+                        "redes"
+                        "derechos";
+    padding: 10px;
+    .footer{
+        &__mapa{
+            display: none;
+        }
+    }
+}
+}
+
+/* MEDIA QUERIE TABLET */
+@media (min-width: 576px) and (max-width:992px) {
+    /* HEADER */
+    .nav-item{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+/* MAIN-INDEX */
+    .portada{
+        .main__bodegas{
+            .main__galeria{
+                &--img{
+                    padding: 10px;
+                }
+            }
+        }
+    }
+
+/* FOOTER */
+footer{
+    .footer{
+        &__mapa{
+            display: none;
+        }
+    }
+}
+}
