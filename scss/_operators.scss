@@ -1,0 +1,12 @@
+$titulos:(
+    h1: 3rem,
+    h2: 2rem,
+    h3: 1rem
+);
+
+@mixin flex($wrap, $flex-direction, $justify, $align) {
+    flex-wrap: $wrap;
+    flex-direction: $flex-direction;
+    justify-content: $justify;
+    align-items: $align;
+}
