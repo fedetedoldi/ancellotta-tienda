@@ -53,6 +53,7 @@ button{
         .main__galeria{
             display: flex;
             @include flex(wrap, row, space-evenly, center);
+            gap: 5px;
             &--img{
                 width: $bodegas-portada;
                 height: $bodegas-portada;

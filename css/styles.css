@@ -93,7 +93,8 @@ button {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: center; }
+  align-items: center;
+  gap: 5px; }
   .portada .main__bodegas .main__galeria--img {
     width: 12.5rem;
     height: 12.5rem; }
